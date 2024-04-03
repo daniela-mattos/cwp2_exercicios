@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de JavaScript Básico</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exercícios de JavaScript Básico</h1>
+    <h2 onclick="exercicio1()">Exercício 1</h2>
+    <p>Prompt solicita nome, idade, profissão e mostra num alert.</p>
+
+    <h2 onclick="exercicio2()">Exercício 2</h2>
+    <p>Pompt solicita valor e quantidade e mostra o resultado em alert.</p>
+
+    <h2 onclick="contagemRegressiva()">Exercício 3</h2>
+    <p id=>Faz contagem regressiva </p>
+    <p id="contagem"></p>
+
+    <h2 onclick="exercicio4()">Exercício 4</h2>
+    <p>Prompt solicita número e mostra a tabuada dele.</p>
+    <p id="tabuada"></p>
+
+    <h2>Exercício 5</h2>
+    <p>Botão vai contar cliques.</p>
+    <button id="contaCliques" onclick="exercicio5()">Conta Cliques</button>
+
+    <h2>Exercício 6</h2>
+    <p>Formulário com validação de dados.</p>
+            <form name="dadosForm" action="aviso.html" target="_blank" onsubmit="return validateForm()" method="post">
+                <label for="fnome">Nome: </label> <br>
+                <input type="text" name="fnome"><br>
+                
+                <label for="fmail">Email: </label> <br>
+                <input type="text" name="fmail"><br>
+
+                <label for="fsenha">Senha: </label><br>
+                <input type="password" name="fsenha"><br>
+                <input type="submit" value="Enviar">
+              </form>
+
+    <h2>Exercício 7</h2>
+    <p>Vai gerar o fatorial do número indicado na caixa de texto.</p>
+        <p id="texto">Digite um número:</p>
+        <input type="number" min="0" id="numeroDigitado"> <br>
+        <button onclick="exercicio7()" id="verifica">Fatorar!</button>
+
+    <h2>Exercício 8</h2>
+    <p>Manipulação de Array, adicionando, removendo e listando itens.</p>
+    <a href="lista.html">Vá para a lista</a>
+
+</body>
+</html>

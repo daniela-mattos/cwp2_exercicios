@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="addLista">
+        <input type="text" id="novaPalavra">
+        <button onclick="adicionarTarefa()">Adicionar</button>
+    </div>
+    
+    <div id="removeLista">
+        <input type="number" min="0" id="indexVetor">
+        <button onclick="removerTarefa()">Remover</button>
+    </div>
+
+    <div>
+        <button onclick="listarTarefas()">Listar</button>
+        <h2 id="tituloResposta"></h2>
+        <p  id="mostraLista"></p>
+    </div>
+
+    <a href="index.html">Voltar para a home</a>
+
+</body>
+</html>

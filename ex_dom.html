@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios com DOM</title>
+</head>
+<body>
+    <p id="paragrafo">Texto 1</p>
+    <p>Texto 2</p>
+    <a href="https://google.com">Google</a>
+    <br>
+    <button onclick="main()">Main</button>
+
+    <script>
+        function main() {
+            let bodyObject = document.body;
+            console.log(bodyObject);
+
+            let pObject = document.getElementById("paragrafo");
+            pObject.style.fontFamily = "Impact";
+            pObject.style.fontSize = "20px";
+
+            let novoParagrafo = document.createElement('p');
+            novoParagrafo.textContent = 'New P';
+            pObject.appendChild(novoParagrafo);
+        }
+    </script>
+</body>
+</html>
